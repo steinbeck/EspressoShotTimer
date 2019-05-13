@@ -2,6 +2,7 @@ wall_thickness = 2;
 base_width = 88;
 base_depth = 44;
 case_height = 25;
+gaggia_steel_thickness = 0.5;
 slitcount = 8;
 slitwidth = 2;
 
@@ -51,13 +52,13 @@ module slitted_lower_part()
 
 module hook()
 {
-    translate([-.5, 0, case_height - 1])
+    translate([-gaggia_steel_thickness, base_depth - 1, 0])
     {
-        cube([.5, base_depth, 1]);
+        cube([gaggia_steel_thickness, 1, case_height]);
     }
-    translate([-.5 - wall_thickness, 0, case_height - 10])
+    translate([-gaggia_steel_thickness - wall_thickness, base_depth - 10, 0])
     {
-        cube([wall_thickness, base_depth, 10]);
+        cube([wall_thickness, 10, case_height]);
     }
 
 }
