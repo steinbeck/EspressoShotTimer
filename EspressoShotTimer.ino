@@ -26,13 +26,12 @@ int seconds = 0;
 void setup()   {
   Serial.begin(9600);
 
-  // by default, we'll generate the high voltage from the 3.3v line internally! (neat!)
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3C (for the 64x48)
-  // init done
 
-  // Show image buffer on the display hardware.
-  // Since the buffer is intialized with an Adafruit splashscreen
-  // internally, this will display the splashscreen.
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3C (for the 64x48)
+ 
+ /* Start a 1 second ticker which calls the routine displayNumber() below, which again increments the 
+ *  seconds counter and updates the OLED display
+ */ 
  ticker1.attach(1, displayNumber);
 
 }
