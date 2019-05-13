@@ -10,6 +10,9 @@ The timer, counting seconds, should start when you push the button engaging the 
 
 ## Electronics
 The electronics should provide a timer counting seconds and a display to display the current value. The switch that switches the pump of the Gaggia on and off is switching 230V, so one needs a power supply to convert the 230V down to the 3.3V needed by the electronics of this project. 
+
+SAFETY WARNING: If you work on project like this that deal with mains voltage of 110V or higher, you need to know what you are doing. Otherwise you may shock or kill yourself and even others trying to help you. If you unsure, ask someone who knows! 
+
 Since I was doing microcontroller programming with the Arduino framework a lot recently, I decided to go for something that was simple for me, rather than the cheapest and overall simplest solution. So I based the design on an ESP8266 and OLED display. The ESP8266 is mostly wasted here, because it provides Wifi which is not needed here, but I like the modular design of the WEMOS D1 componentent with ESP8266 and went to those. You can quite likely find something even cheaper. 
 So, the main component of this build were
 
@@ -18,7 +21,7 @@ So, the main component of this build were
 * Power supply 230V to 3.3.V from TenStar (bought from AZ-Delivery via Amazon.de)
 * A circuit board with some wire, capacitors and fuses
 
-The board design was inspired by this RandomeNerd tutorial.
+The board design was inspired by [this RandomeNerd tutorial](https://randomnerdtutorials.com/esp8266-hi-link-hlk-pm03/), which convinced me to add fuses to protect the components and some capacitory to stablize the current to the microcontroller. You can probably do without those and safe some space. As you will see, these additional component made the whole timer quite bulky :).
 
 
 ## Software
