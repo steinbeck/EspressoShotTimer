@@ -34,6 +34,8 @@ The board design was inspired by [this RandomeNerd tutorial](https://randomnerdt
 
 ## Software
 The very basic software for the ESP8266 is based on a ticker which increments the seconds counter and calls the update of the OLED. 
+It needs the Adafruit_GFX library and the Adafruit library for the SSD1306 to handle the low level communication with the hardware. 
+You further need the ticker library. The file EspressoShotTimer.ino from this project should compile without issues if you pre-install all libraries listed in the beginning of this file. 
 
 ## Enclosure
 The enclosure was designed in OpenSCAD to be 3D printed.
