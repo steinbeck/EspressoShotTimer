@@ -49,6 +49,19 @@ module slitted_lower_part()
         }
 }
 
+module hook()
+{
+    translate([-.5, 0, case_height - 1])
+    {
+        cube([.5, base_depth, 1]);
+    }
+    translate([-.5 - wall_thickness, 0, case_height - 10])
+    {
+        cube([wall_thickness, base_depth, 10]);
+    }
+
+}
+
 
 
 module complete_lower_part()
@@ -96,6 +109,7 @@ module snap_frame()
     }
 }
 
+
 module lid()
 {
     difference()
@@ -125,6 +139,9 @@ translate([0, -base_depth - 10, 0])
 {
     lid();
 }
+
+hook();
+
 
 
 
