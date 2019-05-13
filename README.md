@@ -25,7 +25,7 @@ The board design was inspired by [this RandomeNerd tutorial](https://randomnerdt
 
 
 ## Software
-Arduino-language-based timer software
+The very basic software for the ESP8266 is based on a ticker which increments the seconds counter and calls the update of the OLED. 
 
 ## Enclosure
 The enclosure was designed in OpenSCAD to be 3D printed.
