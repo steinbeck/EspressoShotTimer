@@ -38,7 +38,7 @@ It needs the Adafruit_GFX library and the Adafruit library for the SSD1306 to ha
 You further need the ticker library. The file EspressoShotTimer.ino from this project should compile without issues if you pre-install all libraries listed in the beginning of this file. 
 
 ## Enclosure
-The enclosure was designed in OpenSCAD to be 3D printed.
+The enclosure was designed in OpenSCAD (https://www.openscad.org/) to be 3D printed. OpenSCAD allows for parametric design of 3D components, i.e. you code your model rather than using a point and click GUI. I could never find the patience to learn these point and click user interfaces. 
 ![Enclosure as shown in openSCAD](images/enclosure_openscad.png?raw=true "Enclosure as diplayed during design in OpenSCAD")
 
 
