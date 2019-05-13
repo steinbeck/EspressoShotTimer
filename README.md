@@ -4,6 +4,9 @@ Apart from many other parameters (pressure, temperature), the time for the pulli
 
 So, this project is about building an Espresso Shot Timer for the Gaggia Classic and it covers electronics, software and a 3D printed enclosure for the timer. 
 
+* TODO in this section:
+** Add picture of final build attached to Gaggia and counting :)
+
 ## Boundary conditions
 
 The timer, counting seconds, should start when you push the button engaging the pressure pump and obviously stop when you switch the pump off again. It would be ideal if the final value could be displayed for some more seconds after the pump is switched off, but this is not part of my design for reasons that will become obvious (mostly because if would have been complicated). 
@@ -22,6 +25,11 @@ So, the main component of this build were
 * A circuit board with some wire, capacitors and fuses
 
 The board design was inspired by [this RandomeNerd tutorial](https://randomnerdtutorials.com/esp8266-hi-link-hlk-pm03/), which convinced me to add fuses to protect the components and some capacitory to stablize the current to the microcontroller. You can probably do without those and safe some space. As you will see, these additional component made the whole timer quite bulky :).
+![Picture of electronics circuit board without enclosure](images/timer_raw_board.png?raw=true "Electronics circuit board")
+
+
+* TODO in this section:
+** Add Fritzing wiring diagram
 
 
 ## Software
@@ -30,3 +38,7 @@ The very basic software for the ESP8266 is based on a ticker which increments th
 ## Enclosure
 The enclosure was designed in OpenSCAD to be 3D printed.
 ![Enclosure as shown in openSCAD](images/enclosure_openscad.png?raw=true "Enclosure as diplayed during design in OpenSCAD")
+
+
+* TODO in this section:
+** Add picture of 3D printed enclosure
