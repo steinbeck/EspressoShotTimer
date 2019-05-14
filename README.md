@@ -25,6 +25,9 @@ So, the main component of this build were
 * A circuit board with some wire, capacitors and fuses
 
 The board design was inspired by [this RandomeNerd tutorial](https://randomnerdtutorials.com/esp8266-hi-link-hlk-pm03/), which convinced me to add fuses to protect the components and some capacitors to stablize the current to the microcontroller. You can probably do without those and safe some space. As you will see, these additional component made the whole timer quite bulky :).
+
+TODO: I just realised that it would be much smarter to separate OLED/ESP8266 from the power supply and leave the power supply in its own enclosure within the Gaggia case. That leaves us with only 3.3V lines and a much smaller display enclosure outside of the Gaggia :)
+
 ![Picture of electronics circuit board without enclosure](images/timer_raw_board.png?raw=true "Electronics circuit board")
 
 
