@@ -24,7 +24,7 @@ So, the main component of this build were
 * Power supply 230V to 3.3.V from TenStar (bought from AZ-Delivery via Amazon.de)
 * A circuit board with some wire, capacitors and fuses
 
-The board design was inspired by [this RandomeNerd tutorial](https://randomnerdtutorials.com/esp8266-hi-link-hlk-pm03/), which convinced me to add fuses to protect the components and some capacitory to stablize the current to the microcontroller. You can probably do without those and safe some space. As you will see, these additional component made the whole timer quite bulky :).
+The board design was inspired by [this RandomeNerd tutorial](https://randomnerdtutorials.com/esp8266-hi-link-hlk-pm03/), which convinced me to add fuses to protect the components and some capacitors to stablize the current to the microcontroller. You can probably do without those and safe some space. As you will see, these additional component made the whole timer quite bulky :).
 ![Picture of electronics circuit board without enclosure](images/timer_raw_board.png?raw=true "Electronics circuit board")
 
 
